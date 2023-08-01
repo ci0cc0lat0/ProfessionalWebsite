@@ -35,12 +35,12 @@
     }
     #open_sec{
         margin: auto auto;
-        width: 65%;
+        width: 69%;
         max-width: 1100px;
-
-        
+        padding: 2rem;
         
     }
+
 </style> 
 
 <div  id="maincontainer" bind:this={maincontainer}>

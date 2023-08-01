@@ -28,21 +28,38 @@
 
 </script>
 <style>
-    
+    :global(html){
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
     :global(body){
         margin: 0;
         padding: 0;
-        background-color: #393965;
+        min-height: 100%;
+        background-color: #E8E9ED;
+
     }
+
     :global(p){
-        color: #E8E9ED;
+        color: #191919;
     }
+    :global(h1){
+        color: #191919;
+    }
+    :global(h2){
+        color: #191919;
+    }
+    :global(div){
+        color: #191919;
+    }
+
 
 #sidebar{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333355;
+    background-color: #191919;
     width: 250px;
     height:100vh ;
     overflow-x: hidden;
@@ -66,12 +83,12 @@ h3{
     left: 0;
     width: 60px;
     height: 60px;
-    background-color: #ff66b3;
+    background-color: #fb742d;
     visibility: visible;
 }
 #navbar{
     margin-left: 250px;
-    background-color: #333355;
+    background-color: #191919;
     width: 100%;
     height: 60px;
     transition: margin-left .5s;
@@ -84,7 +101,7 @@ h3{
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #ff66b3;
+    background-color: #fb742d;
     visibility: hidden;
     transition: .25s;
 }

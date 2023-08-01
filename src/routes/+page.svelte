@@ -6,14 +6,26 @@
 </script>
 
 <style>
+    #sec-cont{
+        background: #191919;
+        padding: 3rem;
+        border-radius: 50px;
+        position: relative;
+    }
+    #firstchild{
+        margin: 0rem 0 0rem 0;
+        
+    }
     .section {
-        margin: 3rem 0 3rem 0;
-        background-color: #0496ff;
-        border-radius: 15px;
+        margin: 2rem 0 0rem 0;
+        background-color: #E8E9ED;
+        border-radius: 20px;
         overflow: hidden;
+        height: auto;
+        border:#fb742d solid 5px ;
     }
     .headerbox {
-        background: #334;
+        background: #fb742d;
         height: 80px;
     }
     .heading {
@@ -34,24 +46,24 @@
         gap: 10px;
     }
     .picabout > div {
-        background: #113;
+        background: #47464d;
         width: 26vmin;
         height: 26vmin;
         padding: 15px;
-        border-radius: 5px 50px 5px 50px;
+        border-radius: 10px 50px 10px 50px;
     }
     .picabout div:nth-child(2) {
-        border-radius: 50px 5px 50px 5px;
+        border-radius: 50px 10px 50px 10px;
     }
     .link-box {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        padding: 10px;
+        gap: 10px;
+        padding: 15px;
     }
     .link-box > div {
         box-sizing: border-box;
-        background: #336;
+        background: #47464d;
 
         height: 70px;
         border-radius: 5px 25px 5px 25px;
@@ -73,8 +85,9 @@
 
 <!--Defaultpage holds style for sidebar margin/centering -->
 <Defaultpage>
+    <div id="sec-cont">
     <!--a pic and about my section-->
-    <div class="section">
+    <div id="firstchild" class="section">
         <div class="picabout">
             <div id="about" class="">
                 <h1>Anthony Ciocco</h1>
@@ -177,4 +190,5 @@
             <div class=" link">My assets</div>
         </div>
     </div>
+</div>
 </Defaultpage>
