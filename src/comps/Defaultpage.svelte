@@ -16,7 +16,7 @@
         }
     }
     $: {
-        changeMargin()
+        //changeMargin()
         console.log($sidebarOpen)
     }
 </script>
@@ -26,16 +26,16 @@
     }
     
     #maincontainer{
-        margin-left: 250px;
-        top: 60px;
+        /*margin-left: 250px;*/
+        margin-top:60px;
         transition: margin-left .5s;
-        position: relative;
+
         
 
     }
     #open_sec{
         margin: auto auto;
-        width: 69%;
+        width: 66%;
         max-width: 1100px;
         padding: 2rem;
         

@@ -3,11 +3,19 @@
     import Datasection from "../comps/Datasection.svelte";
     import Gamesection from "../comps/Gamesection.svelte";
     import Projectsection from "../comps/Projectsection.svelte";
+    import { onMount } from "svelte";
+
+    onMount(()=>{
+        let toenable = document.getElementsByClassName("link")
+        for(let i = 0; i < toenable.length; i++){
+            toenable[i].style.transition = " 0.35s"
+        }
+    })
 </script>
 
 <style>
     #sec-cont{
-        background: #191919;
+        background: #181a1b83;
         padding: 3rem;
         border-radius: 50px;
         position: relative;
@@ -18,15 +26,18 @@
     }
     .section {
         margin: 2rem 0 0rem 0;
-        background-color: #E8E9ED;
+        background-color: #2b2a33;
         border-radius: 20px;
         overflow: hidden;
         height: auto;
-        border:#fb742d solid 5px ;
+        scroll-margin-top:60px;
+
+        
     }
     .headerbox {
-        background: #fb742d;
+        background: #E8E9ED;
         height: 80px;
+        text-align: center;
     }
     .heading {
         position: relative;
@@ -36,17 +47,17 @@
         margin: 0;
     }
     .small-about {
-        padding: 0 10px 0 10px;
+        padding: 0 15px 0 15px;
     }
     .picabout {
-        padding-top: 10px;
+        padding: 15px 15px 0px 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 10px;
     }
     .picabout > div {
-        background: #47464d;
+        background: #636172;
         width: 26vmin;
         height: 26vmin;
         padding: 15px;
@@ -60,11 +71,12 @@
         flex-direction: column;
         gap: 10px;
         padding: 15px;
+        
     }
     .link-box > div {
         box-sizing: border-box;
-        background: #47464d;
-
+        background: #636172;
+        border: #E8E9ED 1px solid;
         height: 70px;
         border-radius: 5px 25px 5px 25px;
         padding: 10px;
@@ -73,6 +85,12 @@
         box-sizing: border-box;
         margin-left: 40px;
     }
+    .link:hover{
+        background: #83819f;
+        border: #83819f 1px solid;
+
+    }
+    
     .picaboutlink {
         margin: 0;
     }
@@ -80,6 +98,8 @@
         max-width: 100%;
         height: 100%;
         object-fit: contain;
+        border-radius: 50px 10px 50px 10px;
+
     }
 </style>
 
@@ -88,9 +108,11 @@
     <div id="sec-cont">
     <!--a pic and about my section-->
     <div id="firstchild" class="section">
+        <div class="headerbox">
+            <h1 class="heading">Anthony Ciocco</h1>
+        </div>
         <div class="picabout">
             <div id="about" class="">
-                <h1>Anthony Ciocco</h1>
                 <p>About and contact</p>
             </div>
             <div id="imgdiv" class="">
@@ -99,14 +121,14 @@
         </div>
 
         <div class="link-box">
-            <div class="link picaboutlink">page link</div>
-            <div class="link picaboutlink">page link</div>
-            <div class="link picaboutlink">page link</div>
-            <div class="link picaboutlink">page link</div>
+            <div class="link picaboutlink"><a href="#projects">ppppp</a></div>
+            <div class="link picaboutlink"><a href="#datascience">https://www.kaggle.com/anthonyciocco/code</a></div>
+            <div class="link picaboutlink"><a href="#gamedev">ggggg</a></div>
+            <div class="link picaboutlink"><a href="#gamedev">https://github.com/ci0cc0lat0</a></div>
         </div>
     </div>
     <!--Projects section-->
-    <div class="section">
+    <div id="projects" class="section">
         <div class="headerbox">
             <h1 class="heading">Projects</h1>
         </div>
@@ -128,7 +150,7 @@
             <div class="linkhead">
                 <h2 class="heading">Full Stack App</h2>
             </div>
-            <div class=" link">Github</div>
+            <div class=" link"><p>Github</p></div>
 
             <div class="linkhead">
                 <h2 class="heading">Dotabase</h2>
@@ -142,7 +164,7 @@
         </div>
     </div>
     <!--Datascience-->
-    <div class="section">
+    <div id="datascience" class="section">
         <div class="headerbox">
             <h1 class="heading">Data Science</h1>
         </div>
@@ -169,7 +191,7 @@
         </div>
     </div>
     <!--Gamedev-->
-    <div class="section">
+    <div id="gamedev" class="section">
         <div class="headerbox">
             <h1 class="heading">Gamedev</h1>
         </div>
