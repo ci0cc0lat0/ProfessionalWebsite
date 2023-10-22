@@ -1,14 +1,11 @@
 <script>
     import Defaultpage from "../comps/Defaultpage.svelte";
-    import Datasection from "../comps/Datasection.svelte";
-    import Gamesection from "../comps/Gamesection.svelte";
-    import Projectsection from "../comps/Projectsection.svelte";
     import { onMount } from "svelte";
 
     onMount(()=>{
         let toenable = document.getElementsByClassName("link")
         for(let i = 0; i < toenable.length; i++){
-            toenable[i].style.transition = " 0.35s"
+            toenable[i].style.transition = " 0.2s"
         }
     })
 </script>
@@ -31,8 +28,6 @@
         overflow: hidden;
         height: auto;
         scroll-margin-top:60px;
-
-        
     }
     .headerbox {
         background: #E8E9ED;
@@ -50,6 +45,7 @@
         padding: 0 15px 0 15px;
     }
     .picabout {
+        text-align: center;
         padding: 15px 15px 0px 15px;
         display: flex;
         flex-wrap: wrap;
@@ -58,8 +54,8 @@
     }
     .picabout > div {
         background: #636172;
-        width: 26vmin;
-        height: 26vmin;
+        width: 32vmin;
+        height: 32vmin;
         padding: 15px;
         border-radius: 10px 50px 10px 50px;
     }
@@ -73,7 +69,8 @@
         padding: 15px;
         
     }
-    .link-box > div {
+
+    .linkhead{
         box-sizing: border-box;
         background: #636172;
         border: #E8E9ED 1px solid;
@@ -84,6 +81,18 @@
     .link {
         box-sizing: border-box;
         margin-left: 40px;
+        background: #636172;
+        border: #E8E9ED 1px solid;
+        height: 55px;
+        border-radius: 5px 25px 5px 25px;
+        padding: 10px;
+    }
+    .link > p{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
     }
     .link:hover{
         background: #83819f;
@@ -101,6 +110,29 @@
         border-radius: 50px 10px 50px 10px;
 
     }
+    a > h2 {
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+        color: #E8E9ED;
+    }
+    p{
+        font-size: 1.1em;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        justify-content: center;
+        
+        overflow: scroll;
+    }
+    #about p{
+        font-size: 1.6vh;
+        font-weight: 600;
+        margin: 10px;
+    }
 </style>
 
 <!--Defaultpage holds style for sidebar margin/centering -->
@@ -113,20 +145,43 @@
         </div>
         <div class="picabout">
             <div id="about" class="">
-                <p>About and contact</p>
+                <p>I'm Anthony, a soon to be graduate from University of Houston with a major in Computer Science and a minor in Mathematics.</p>
+
+                <p>My focus while at UH was split between data science, game development, and web development, both front and back end.</p>
+
+                <p>In my free time, I try my hand at drawing, honing my programming skills and self studying statistics for data science projects.</p>
+                
+
+
+
             </div>
             <div id="imgdiv" class="">
-                <img src="Billy.jpg" alt="" />
+                <img src="Anthony.png" alt="" />
             </div>
         </div>
 
         <div class="link-box">
-            <div class="link picaboutlink"><a href="#projects">ppppp</a></div>
-            <div class="link picaboutlink"><a href="#datascience">https://www.kaggle.com/anthonyciocco/code</a></div>
-            <div class="link picaboutlink"><a href="#gamedev">ggggg</a></div>
-            <div class="link picaboutlink"><a href="#gamedev">https://github.com/ci0cc0lat0</a></div>
+            <a class="link picaboutlink" target="_blank" href="anthonycioccoresume.pdf">
+                <h2 class="heading">Resume
+                </h2>
+                
+            </a>
+            
+            
+            <a class="link picaboutlink" target="_blank" href="https://github.com/ci0cc0lat0"><h2 class="heading">Github</h2>
+                
+            </a>
+            
+            <a class="link picaboutlink" target="_blank" href="https://www.kaggle.com/anthonyciocco/code"><h2 class="heading">Kaggle</h2>
+                
+            </a>
+            <a class="link picaboutlink" target="_blank" href="https://ci0cc0lat0.itch.io/"><h2 class="heading">Itch.io</h2>
+                
+            </a>
+            
         </div>
     </div>
+
     <!--Projects section-->
     <div id="projects" class="section">
         <div class="headerbox">
@@ -134,33 +189,36 @@
         </div>
         <div class="small-about">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                impedit ipsa omnis aperiam fugiat eius sint, ad unde praesentium
-                beatae amet tempora! Magnam mollitia, rerum eum voluptatum error
-                voluptatem. Accusantium.
+                These projects showcase my interest and how I applied my skillset to projects which range from data science and visualization to front and backend development. 
             </p>
         </div>
 
         <div class="link-box">
             <div class="linkhead">
+                <h2 class="heading">Off Record Blog</h2>
+            </div>
+            <a class=" link" target="_blank" href="https://offrecord.blog/"><p>A wordpress website I managed and developed</p></a>
+
+            <div class="linkhead">
                 <h2 class="heading">Datascience Geolocation</h2>
             </div>
-            <div class=" link">Itch</div>
+            <a class=" link" target="_blank" href="https://github.com/ci0cc0lat0/Data-Science-Group-Work/blob/main/Final%20POIMAGIC.ipynb"><p>A notebook visualizing earthquakes globally</p></a>
 
             <div class="linkhead">
                 <h2 class="heading">Full Stack App</h2>
             </div>
-            <div class=" link"><p>Github</p></div>
+            <a class=" link" target="_blank" href="https://github.com/ci0cc0lat0/NodeDatabaseDemo"><p>RESTful application connected to an SQL Database</p></a>
 
             <div class="linkhead">
                 <h2 class="heading">Dotabase</h2>
             </div>
-            <div class=" link">My assets</div>
+            <a class=" link" target="_blank" href="https://github.com/ci0cc0lat0/Dotabase"><p>Scraping Opendota API for match data</p></a>
 
             <div class="linkhead">
-                <h2 class="heading">Antpond</h2>
+                <h2 class="heading"><p>Antpond</p></h2>
             </div>
-            <div class=" link">My assets</div>
+            <a class=" link" target="_blank" href="https://www.theantpond.com/"><p>A website-project made in ReactJS</p></a>
+
         </div>
     </div>
     <!--Datascience-->
@@ -170,24 +228,22 @@
         </div>
         <div class="small-about">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                impedit ipsa omnis aperiam fugiat eius sint, ad unde praesentium
-                beatae amet tempora! Magnam mollitia, rerum eum voluptatum error
-                voluptatem. Accusantium.
+                These notebooks are a collection of some of the work I preformed at university and show my use of Numpy, Pandas, and R along with R studio.
             </p>
         </div>
         <div class="link-box">
             <div class="linkhead">
                 <h2 class="heading">Python</h2>
             </div>
-            <div class=" link">kaggle</div>
-            <div class=" link">kaggle</div>
-            <div class=" link">kaggle</div>
-            <div class=" link">kaggle GROUP</div>
+            
+            <a target="_blank" href="https://www.kaggle.com/code/anthonyciocco/task-2-cosc3337" class=" link"><p>Visualizing data with python</p></a>
+            <a target="_blank" href="https://github.com/ci0cc0lat0/Dotabase/blob/main/notebook.ipynb" class=" link"><p>Analyzing data from Dota 2 stats</p></a>
             <div class="linkhead">
+                
+
                 <h2 class="heading">R</h2>
             </div>
-            <div class=" link">kaggle</div>
+            <a href="https://www.kaggle.com/code/anthonyciocco/marriage-divorce-3337/notebook" target="_blank" class=" link"><p>Notebook analyzing marriage data</p></a>
         </div>
     </div>
     <!--Gamedev-->
@@ -197,19 +253,16 @@
         </div>
         <div class="small-about">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                impedit ipsa omnis aperiam fugiat eius sint, ad unde praesentium
-                beatae amet tempora! Magnam mollitia, rerum eum voluptatum error
-                voluptatem. Accusantium.
+                This game was part of my senior project and was the effort of 6 individuals, myself included. 
             </p>
         </div>
         <div class="link-box">
             <div class="linkhead">
                 <h2 class="heading">Shroomp</h2>
             </div>
-            <div class=" link">Itch</div>
-            <div class=" link">Github</div>
-            <div class=" link">My assets</div>
+            <a target="_blank" href="https://ci0cc0lat0.itch.io/shroomp" class=" link"><p>Itch </p></a>
+            <a target="_blank" href="https://github.com/ShaEithan/Shroomp" class=" link"><p>Github</p></a>
+            <a target="_blank" class=" link"><p>My assets: (coming soon)</p></a>
         </div>
     </div>
 </div>

@@ -22,7 +22,7 @@
 </script>
 <style>
     *{
-        font-family:'consolas' ;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     #maincontainer{
@@ -36,9 +36,9 @@
     #open_sec{
         margin: auto auto;
         width: 66%;
-        max-width: 1100px;
+        max-width: 1050px;
         padding: 2rem;
-        
+
     }
 
 </style> 

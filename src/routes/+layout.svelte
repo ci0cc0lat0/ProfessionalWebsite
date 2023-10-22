@@ -76,6 +76,7 @@
     :global(p){
         color: #E8E9ED;
         position: relative;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     :global(h1){
         color: #2b2a33;
@@ -155,7 +156,7 @@ h3{
 
     gap: 5px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content:center;
     align-items: center;
 
@@ -175,7 +176,8 @@ h3{
 }
 .flexlink{
     text-align: center;
-    font-family: consolas;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 a{
