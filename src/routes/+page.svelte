@@ -149,7 +149,7 @@
 
                 <p>My focus while at UH was split between data science, game development, and web development, both front and back end.</p>
 
-                <p>In my free time, I try my hand at drawing, honing my programming skills and self studying statistics for data science projects.</p>
+                <p>Some of mine hobbies include, drawing, honing my programming skills and self studying Statistics and Math for data science projects.</p>
                 
 
 
