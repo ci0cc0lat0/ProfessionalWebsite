@@ -1,5 +1,5 @@
 <script>
-    
+    export const prerender = true;
     import {sidebarOpen} from './store'
     import { onMount } from "svelte";
 
