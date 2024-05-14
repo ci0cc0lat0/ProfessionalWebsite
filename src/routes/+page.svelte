@@ -161,7 +161,7 @@
         </div>
 
         <div class="link-box">
-            <a class="link picaboutlink" target="_blank" href="anthonycioccoresume.pdf">
+            <a class="link picaboutlink" target="_blank" href="anthonycioccoresumeHNSMUpdated.pdf">
                 <h2 class="heading">Resume
                 </h2>
                 
