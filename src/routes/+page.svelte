@@ -145,7 +145,7 @@
         </div>
         <div class="picabout">
             <div id="about" class="">
-                <p>I'm Anthony, a soon to be graduate from University of Houston with a major in Computer Science and a minor in Mathematics.</p>
+                <p>I'm Anthony, a graduate from University of Houston with a major in Computer Science and a minor in Mathematics.</p>
 
                 <p>My focus while at UH was split between data science, game development, and web development, both front and back end.</p>
 
