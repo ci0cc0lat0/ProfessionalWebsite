@@ -1,0 +1,180 @@
+body {
+  background-color: #47464d;
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  background-color: #000000;
+  height:100vh;
+  width: 18vw;
+  min-width: 230px;
+  max-width: 420px;
+  position:fixed;
+  top:0;
+  left:0;
+  
+  box-sizing: border-box;
+  border-right: #fb742d 5px solid;
+  display: flex;
+  flex-direction: column;
+  gap:1px;
+}
+#ANTDOCS{
+  background-color: #f6f6f6;
+  text-align: center;
+}
+#ANTDOCS > h1{
+  color: #000000 ;
+  padding: 0;
+}
+.nav_header{
+  font-family: monospace;
+  outline: #fb742d 1px solid;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.nav_header h1{
+  box-sizing:content-box;
+  font-size: 2rem;
+  margin: 0 0;
+  padding: 0 0 ;
+  color:white;
+  padding-left: 1rem;
+}
+
+.nav_header h1:hover{
+  background-color: none;
+}
+
+
+
+
+main{
+  margin-left: 18%;
+  padding: 2rem;
+}
+
+.header_container{
+  padding: 5px 50px;
+  margin: 25px 0 ;
+  color: white;
+}
+
+.header_container h1{
+  font-family: monospace;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.inner_section{
+  font-size: 1.2rem;
+  font-family: monospace;
+
+}
+
+section hr{
+  border:none;
+  height: 3px;
+  color: #fb742d;
+  background-color: #fb742d;
+}
+.about_body{
+  margin: auto;
+  background-color: #DBE4EE;
+  margin-bottom: 10px;
+
+}
+
+
+/*
+
+body {
+  background-color: #47464d;
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  background-color: #000000;
+  height:100vh;
+  width: 18vw;
+  min-width: 230px;
+  max-width: 420px;
+  position:fixed;
+  top:0;
+  left:0;
+  
+  box-sizing: border-box;
+  border-right: #fb742d 5px solid;
+  display: flex;
+  flex-direction: column;
+  gap:1px;
+}
+#ANTDOCS{
+  background-color: #f6f6f6;
+  text-align: center;
+}
+#ANTDOCS > h1{
+  color: #000000 ;
+  padding: 0;
+}
+.nav_header{
+  font-family: monospace;
+  outline: #fb742d 1px solid;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.nav_header h1{
+  box-sizing:content-box;
+  font-size: 2rem;
+  margin: 0 0;
+  padding: 0 0 ;
+  color:white;
+  padding-left: 1rem;
+}
+
+.nav_header h1:hover{
+  background-color: none;
+}
+
+
+
+
+main{
+  margin-left: 18%;
+  padding: 2rem;
+}
+
+.header_container{
+  padding: 5px 50px;
+  margin: 25px 0 ;
+  color: white;
+}
+
+.header_container h1{
+  font-family: monospace;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.inner_section{
+  font-size: 1.2rem;
+  font-family: monospace;
+
+}
+
+section hr{
+  border:none;
+  height: 3px;
+  color: #fb742d;
+  background-color: #fb742d;
+}
+.about_body{
+  margin: auto;
+  background-color: #DBE4EE;
+  margin-bottom: 10px;
+
+}
+
+*/

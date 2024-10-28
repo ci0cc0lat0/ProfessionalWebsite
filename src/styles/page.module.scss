@@ -1,0 +1,159 @@
+@use 'global_scss' as g;
+
+
+.wrapper{
+  
+  --font-size: 16px;
+  --grid-max: 400px;
+  font-family: g.$font;
+  max-width: g.$main_size;
+  padding: 0 g.$main_padding;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  height: fit-content;
+  /* background-color: aquamarine; */
+
+  h1{
+    margin: 1em 0;
+    text-align: center;
+  }
+}
+
+@media(min-width: 2000px){
+  .wrapper{
+    --font-size: 18px;
+    --grid-max: 450px;
+  }
+}
+.main_box{
+  width: 100%;
+  height: fit-content; 
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.grid_item{
+  @include g.border20;
+  transition: font-size 0.1s linear, max-width 0.5s linear;
+  font-size: var(--font-size);
+  background-color: g.$sect_bg;
+  min-width: 300px;
+  max-width: var(--grid-max);
+  flex:1 1;
+
+
+  .item_wrapper{
+    padding: 5%;
+    h1{
+      margin-top: 0;
+      margin-bottom: 5%;
+    }
+    img{
+      @include g.border20;
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+    p{
+      
+    }
+
+    .about_links{
+      width: 100%;
+      display: inline-flex;
+      gap: 0.5em;
+      text-align:center;
+      justify-content: center;
+      a{
+        color: g.$a_tag_color;
+        padding: 1em;
+        text-decoration: none;
+
+      }
+      a:hover{
+        background-color: #666688;
+        @include g.border10;
+
+      }      
+      
+    }
+  }
+
+  
+}
+
+@media(min-width: 2000px){
+  .wrapper{
+    --font-size: 18px;
+    --grid-max: 450px;
+  }
+  .about_links{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.proj_item{
+  margin: 1em 0;
+  a{
+    color: g.$a_tag_color;
+  }
+  p{
+    display: inline;
+  }
+}
+@media (max-width: 500px){
+  .grid_item{
+    max-width: min(450px, 100%);
+
+  }
+}
+
+.contact_item{
+  padding: 0 0 1em 0;
+  display: flex;
+  justify-content: space-between;
+
+
+  align-items: center;
+  .contact_title{
+    margin: 0;
+    flex: 1 1 3rem;
+  }
+  .contact_text{
+    margin: 0;
+    flex:9;
+    text-align: left;
+    word-break: break-all;
+  }
+  p{
+    display:inline;
+
+  }
+  a{
+    color:g.$a_tag_color;
+  }
+}
+
+/* .main_box{
+  width: 100%;
+  height: fit-content; 
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.grid_item{
+  background-color: #444466;
+  max-width: 400px;
+  height: calc(100vh - 200px);
+} */
+
+
+/* comps */

@@ -1,0 +1,44 @@
+/* */
+.main_box{
+  /*   grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+ */
+
+  width: 100%;
+  height: fit-content; /* change depending on sub containers*/
+  background-color: blue;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+
+  .grid_item{
+    background-color: #dddddd;
+    flex: 1 1 400px;
+    min-width: 300px;
+    height: calc(100vh - 200px);
+  }
+
+
+  /* .grid_item{
+    background-color: #dddddd;
+    position: relative;
+    width: 30%;
+    padding-bottom: 80%;
+
+  .grid_inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  }  */
+}
+@media(max-width: 1280px){
+  .main_box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+  }
+}

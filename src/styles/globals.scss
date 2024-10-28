@@ -1,0 +1,8 @@
+@use 'global_scss' as g;
+
+html, body{
+  background-color: g.$main_bg;
+  height: 100vh;
+  margin: 0;
+
+}

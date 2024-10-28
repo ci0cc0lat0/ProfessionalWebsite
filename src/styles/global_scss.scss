@@ -1,0 +1,18 @@
+// _global_scss.scss
+$nav_bg: #ddddee;
+$cards_bg: nav_bg;
+$main_bg:#aaaacc;
+$sect_bg:#8888aa;
+$main_size:1400px;
+$main_padding: 25px;
+$a_tag_color: rgb(232, 232, 232);
+$font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$font-size-p: 16px;
+$font-size-h1: 30px;
+
+@mixin border20{
+  border-radius: 20px;
+}
+@mixin border10{
+  border-radius: 10px;
+}

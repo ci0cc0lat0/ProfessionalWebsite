@@ -1,0 +1,44 @@
+.wrapper{
+  margin: 0 5rem;
+}
+
+.about{
+  background-color: black;
+  height: 92vh;
+}
+
+.projects{
+  background-color: cornflowerblue;
+  height: fit-content;
+  min-height: 500px;
+}
+
+.ab_image_container{
+  width: fit-content;
+  margin: auto;
+}
+.ab_link_container{
+  
+}
+
+.pro_link_item{
+  font-family: monospace;
+  font-size: 1.3rem;
+  margin:0.8rem 0;
+}
+.pro_link:visited{
+  color: white;
+}
+.pro_link{
+  color: white;
+}
+.pro_link::after{
+  color: white;
+}
+.pro_link_item > p{
+  display: inline;
+  color: white;
+}
+.pro_paragraph{
+
+}

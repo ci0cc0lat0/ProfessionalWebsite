@@ -1,0 +1,38 @@
+@use 'global_scss' as g;
+
+
+.navbar{
+  font-family: g.$font;
+  background-color: g.$nav_bg;
+  width: 100%;
+  height: 80px;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.flex_box{
+  max-width: 1400px;
+  height: 100%;
+  margin: auto;
+  padding:0 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .flex_item{
+  }
+}
+
+#flex_name{
+  flex:9 9;
+}
+#flex_nav{
+  text-align: end;
+  flex:1 0 ;
+  text-align: center;
+
+}
