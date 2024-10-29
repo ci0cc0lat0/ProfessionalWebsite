@@ -56,7 +56,7 @@ export default function page(){
                 A portfolio I designed to show of pictures, projects, and past works.
               </Project_link>*/}
               <Project_link link_display="Gusdiaz" linkto="https://gusdiaz.com/">
-                A freelance professional website and portfolio for a client. Test 
+                A freelance professional website and portfolio for a client. 
               </Project_link>
               <Project_link link_display="Dotabase" linkto="https://github.com/ci0cc0lat0/Dotabase">
                 Python scraping and data analysis of Dota 2 stats that is used by a client for analytics and insights
