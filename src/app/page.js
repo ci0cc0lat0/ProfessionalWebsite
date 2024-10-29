@@ -50,11 +50,14 @@ export default function page(){
                 A media publication where writers and photographers cover shows and media local to Houston and centeralized to Texas.
               </Project_link>
               <Project_link link_display="Sunsideup" linkto="https://sunsideup.vercel.app/">
-                A website and repository for energy related matters in Texas and the surrounding markets.
+                A freelance website and repository for energy related matters in Texas and the surrounding markets.
               </Project_link>
               {/*<Project_link link_display="Keyleephoto" linkto="#">
                 A portfolio I designed to show of pictures, projects, and past works.
               </Project_link>*/}
+              <Project_link link_display="Gusdiaz" linkto="https://gusdiaz.com/">
+                A freelance professional website and portfolio for a client. 
+              </Project_link>
               <Project_link link_display="Dotabase" linkto="https://github.com/ci0cc0lat0/Dotabase">
                 Python scraping and data analysis of Dota 2 stats that is used by a client for analytics and insights
               </Project_link>
