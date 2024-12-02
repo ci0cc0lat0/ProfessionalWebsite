@@ -59,7 +59,7 @@ export default function page(){
                 A freelance professional website and portfolio for a client. 
               </Project_link>
               <Project_link link_display="Dotabase" linkto="https://dotabase.anthonyciocco.com/">
-                Python scraping and data analysis of Dota 2 stats that is used for analytics and insights
+                A simple dashboard dedicated to the collection, viewing, and analysis of Dota 2 statistics.
               </Project_link>
               <Project_link link_display="Shroomp" linkto="https://ci0cc0lat0.itch.io/shroomp">
                 Play my game where you are Shroomp, a mushroom and you must fight back against the protaganost who is causing a stir in your kingdom
