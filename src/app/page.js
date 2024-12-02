@@ -58,8 +58,8 @@ export default function page(){
               <Project_link link_display="Gusdiaz" linkto="https://gusdiaz.com/">
                 A freelance professional website and portfolio for a client. 
               </Project_link>
-              <Project_link link_display="Dotabase" linkto="https://github.com/ci0cc0lat0/Dotabase">
-                Python scraping and data analysis of Dota 2 stats that is used by a client for analytics and insights
+              <Project_link link_display="Dotabase" linkto="https://dotabase.anthonyciocco.com/">
+                Python scraping and data analysis of Dota 2 stats that is used for analytics and insights
               </Project_link>
               <Project_link link_display="Shroomp" linkto="https://ci0cc0lat0.itch.io/shroomp">
                 Play my game where you are Shroomp, a mushroom and you must fight back against the protaganost who is causing a stir in your kingdom
