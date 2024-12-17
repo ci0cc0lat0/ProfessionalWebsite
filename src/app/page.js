@@ -55,6 +55,9 @@ export default function page(){
               {/*<Project_link link_display="Keyleephoto" linkto="#">
                 A portfolio I designed to show of pictures, projects, and past works.
               </Project_link>*/}
+              <Project_link link_display="Vigenère cipher" linkto="https://cipher.anthonyciocco.com/">
+                A vigenère cipher to encrypt text.
+              </Project_link>
               <Project_link link_display="Gusdiaz" linkto="https://gusdiaz.com/">
                 A freelance professional website and portfolio for a client. 
               </Project_link>
