@@ -80,7 +80,7 @@ export default function page(){
               <Project_link link_display="Antgrep" linkto="https://github.com/ci0cc0lat0/antGrepper">
                 A CLI tool written in C++ for grepping all the specific filetypes in a given directory
               </Project_link>
-              <Project_link link_display="anthonyciocco.com" linkto="https://www.theantpond.com/">
+              <Project_link link_display="anthonyciocco.com" linkto="https://www.anthonyciocco.com/">
                 My professional portfolio
               </Project_link>
           </div>
