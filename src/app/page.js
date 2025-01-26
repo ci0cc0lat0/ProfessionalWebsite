@@ -67,7 +67,7 @@ export default function page(){
               <Project_link link_display="Shroomp" linkto="https://ci0cc0lat0.itch.io/shroomp">
                 Play my game where you are Shroomp, a mushroom and you must fight back against the protaganost who is causing a stir in your kingdom
               </Project_link>
-              <Project_link link_display="Theantpond" linkto="https://www.theantpond.com/">
+              <Project_link link_display="Theantpond" linkto="https://pond.anthonyciocco.com/">
                 A personal portfolio I made to showcase art, music, and brain-to-paper thoughts
               </Project_link>
 
